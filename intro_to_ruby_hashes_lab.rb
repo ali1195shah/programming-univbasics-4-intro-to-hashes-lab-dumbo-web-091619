@@ -40,7 +40,7 @@ def update_counting_hash(hash, key)
     hash[key] += 1
   else
     ## this key does not exist yet..what do we do?
-    !hash.has_key
+    hash[key] = 1
   end
   return hash
 end
